@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Oculta 🧐</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+       <fieldset>
+        <h1>Traduza sua mensagem cifrada</h1>
+        <div class="boxmsg">
+            <label for="mensagem"><strong>Coloque aqui a mensagem que voce deseja codificar:</strong></label>
+            <input type="text" name="Mensagem" id="mensagem">
+        </div>
+        
+        <p>Selecionar o tipo de criptografia</p>
+        <ul>
+           <select name="seletor" id="cod">
+                <option value="1">base64"</option>
+                <option value="2">cifra de césar</option>
+               
+            </select> 
+        </ul> 
+
+        
+        <div id=cifra class="cifra-Cezar">
+            <p>Selecionar o tipo de incremento </p>
+            <label for="incremento"><strong>Qual o valor de incremento para cifra cezar?</strong></label>
+            <input type="text" name="Incremento" id="incremento">
+        </div>
+
+
+        <p><strong>Escolha a opção abaixo</strong> </p>
+               
+        <div>
+        <input type="radio" id="btncodificar" name="codificar" value="codificar"
+                checked>
+        <label for="btncodificar">Codificar</label>
+        </div>
+
+        <div>
+        <input type="radio" id="btndescodificar" name="codificar" value="descodificar"
+            checked>
+        <label for="btndescodificar">Descodificar</label>
+        </div>
+
+        <div class="button">
+        <button id="botao1">Codificar Mensagem!"</button>
+        <button id="botao2">Decodificar Mensagem!"</button>
+        </div>
+
+
+        <div id="Traducao">
+        <p id="mensagemTraduzida"><br>
+        </div>
+    
+       </fieldset> 
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
